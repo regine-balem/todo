@@ -24,7 +24,7 @@ function deleteTodo(indice) {
 
 function rafraichirHTML() {
     todo.value = "";
-    fetch('https://balem1393.pythonanywhere.com/todo/')
+    fetch('https://balem1393.pythonanywhere.com/todo')
         .then(response => response.json())
         .then(todolist => {
             elementTODOLIST.innerHTML= "";
